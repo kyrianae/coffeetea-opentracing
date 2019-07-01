@@ -1,57 +1,37 @@
-import time
-from flask import Flask
-from flask import request
-import subprocess
-import datetime
 import json
-import os
-from flask_cors import CORS
-import logging
-from urllib3.exceptions import InsecureRequestWarning
-import requests
-import urllib3
 from time import sleep as sleep
 from influxdb import InfluxDBClient
+from common import trace
+from common import API
+import os
 
-import socket
-import random
-from multiprocessing.dummy import Pool as ThreadPool
+tracer_server = os.environ["tracer_server"]
+tracer_port = os.environ["tracer_port"]
+data_server = os.environ["data_server"]
+data_port = os.environ["data_port"]
+influx_server = os.environ["influx_server"]
+influx_port = os.environ["influx_port"]
+influx_user = os.environ["influx_user"]
+influx_pwd = os.environ["influx_pwd"]
+influx_db = os.environ["influx_db"]
 
-nb_client=50
-root = 'http://127.0.0.1:5003'
+tracer = trace.init_tracer('states', tracer_server, tracer_port)
 
-def call_api(path, header):
-    global root
-    urllib3.disable_warnings(InsecureRequestWarning)
-    result = requests.get(root+path, headers=header, verify=False)
-    result.raise_for_status()
-    return result
+client_influx = InfluxDBClient(influx_server, influx_port, influx_user, influx_pwd, influx_db)
+client_influx.create_database(influx_db)
 
-client = InfluxDBClient('localhost', 8086, 'root', 'root', 'example')
-
-client.create_database('example')
-
+# app = Flask(__name__)
+# CORS(app)
 
 while True:
-    r= None
-    try :
-        r = call_api('/state', {})
-        print (r.content)
-
-        # 'tea_leaf':tea_leaf,
-        # 'coffee_bean':coffee_bean,
-        # 'water':water,
-        # 'total':total,
-        # 'client':client,
-        # 'coffe_in_progress':coffe_in_progress,
-        # 'tea_in_progress':tea_in_progress,
-        # 'fill_coffee_in_progress':fill_coffee_in_progress,
-        # 'fill_water_in_progress':fill_water_in_progress,
-        # 'fill_tea_in_progress':fill_tea_in_progress
-
+    r = None
+    try:
+        span = trace.newspan(tracer, None, 'pushdata')
+        res = trace.inject_in_header(tracer, span, {})
+        r = API.call_api(data_server, data_port, '/state', res)
+        # print(r.content)
         j = json.loads(r.content.decode())
-        # print(j)
-    # if True :
+        sspan = trace.newspan(tracer, span.context, 'push tea')
         json_body = [
             {
             "measurement": "coffeetea",
@@ -59,7 +39,6 @@ while True:
                 "type": "tea",
                 "fill": j['fill_tea_in_progress'],
             },
-
             "fields": {
                 "resource": j['tea_leaf'],
                 "refills": 1.0 if j['fill_tea_in_progress'] else 0.0,
@@ -67,7 +46,10 @@ while True:
             }
         }
         ]
-        client.write_points(json_body)
+        # print(json_body)
+        sspan.finish()
+        sspan = trace.newspan(tracer, sspan.context, 'push coffee')
+        client_influx.write_points(json_body)
         json_body = [
             {
                 "measurement": "coffeetea",
@@ -83,7 +65,10 @@ while True:
                 }
             }
         ]
-        client.write_points(json_body)
+        # print(json_body)
+        client_influx.write_points(json_body)
+        sspan.finish()
+        sspan = trace.newspan(tracer, sspan.context, 'push water')
         json_body = [
             {
                 "measurement": "coffeetea",
@@ -99,7 +84,10 @@ while True:
                 }
             }
         ]
-        client.write_points(json_body)
+        # print(json_body)
+        client_influx.write_points(json_body)
+        sspan.finish()
+        sspan = trace.newspan(tracer, sspan.context, 'push stats')
         json_body = [
             {
                 "measurement": "stats",
@@ -113,8 +101,11 @@ while True:
                 }
             }
         ]
-        client.write_points(json_body)
+        # print(json_body)
+        client_influx.write_points(json_body)
+        sspan.finish()
     except:
         print('not reached or error')
+    span.finish()
 
-    sleep(0.5)
+    sleep(0.01)
