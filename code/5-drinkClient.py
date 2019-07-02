@@ -31,7 +31,7 @@ tracer = trace.init_tracer('customer', tracer_server, tracer_port)
 # app = Flask(__name__)
 # CORS(app)
 
-nb_client = 1
+nb_client = 100
 drinks = ['coffee', 'tea']
 means_of_payment = ['gold', 'card']
 energy = {

@@ -1,0 +1,910 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "gnetId": null,
+  "graphTooltip": 0,
+  "id": 9,
+  "links": [],
+  "panels": [
+    {
+      "aliasColors": {},
+      "datasource": "other",
+      "flowchart": {
+        "options": {
+          "center": true,
+          "grid": false,
+          "lock": true,
+          "scale": true,
+          "zoom": "100%"
+        },
+        "source": {
+          "csv": {
+            "value": "Not yet"
+          },
+          "editor": {
+            "value": "Not yet"
+          },
+          "javascript": {
+            "value": "Not yet"
+          },
+          "json": {
+            "value": "Not yet"
+          },
+          "type": "xml",
+          "url": {
+            "value": "http://<source>:<port>/<pathToXml>"
+          },
+          "xml": {
+            "value": "<mxfile modified=\"2019-06-10T21:37:49.962Z\" host=\"www.draw.io\" agent=\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36\" etag=\"qs9i9MYaYskG4o6howf6\" version=\"10.7.5\"><diagram id=\"Wf3qcd3ZZru2hsfw_U-m\" name=\"Page-1\">7Zpdc6MqGMc/TS7NBF+iuWzSfbnYne1Mz8yevaRKEqYoGSRNcj79QcU3IFObNbFrtxepPALi7/kDD+DEWcXHLwzutt9phMjEnkXHiXM/sW0wA674l1lOhcX3/cKwYTiSmWrDI/4PlSWldY8jlLYyckoJx7u2MaRJgkLeskHG6KGdbU1J+6k7uJFPnNWGxxASpGX7iSO+LayB7df2rwhvtuWTwXxR3IlhmVlWnG5hRA8Nk/Np4qwYpby4io8rRDJ4JZei3Oczd6uGMZTwTgVkk18g2cuXkw3jp/JtD1vM0eMOhln6IDw6cZZbHhORAuISpruC8Rofkah2qbdBNusFMY6ODZNs0xdEY8TZSWSRdy0AvKKMVIjlSGCHmre7kLZtg3VlhNLHm6ryGoO4kCTMVGwNyl3IKdPICO/tsst9TIoMzjJ7RyyU8g0+IfJAU8wxTUSWJ8o5jUUGkt1YwvB5w+g+iVaUZOVEbc46/2vUcUfwJivLqYKc7jnBCVpV8p4JoxA7h8LKZKYe3ADKDie94Lie5gXH4IR5Dz5wNB/8g45ccwHPjC04KWf0GZVcE5qInMs1JkQxQUk3FHwQM2CPcRRlj1maOkDuvEzuOfsrsHYdnbVrYG33wNp9fRB4jbPQ7yz/U2A3dd0n8bVQ+2cYY5Lh+orIC8pqkjfkjAFsmTY1sg+XtT0GFvoYFRg8FvTgMe+D9Q6njbpS/Q06x/xv57ioc8yH6x16UDPu3gGC4boHABrss3FSeBJhS5QDeyWofCoQfXuqDFXE9KMIfvqLciy7Tc8COr35lZQK9FDzD6MHZgPS04PEP4yePaT29LBv3MOkpUxJvh5hm2Ykpw/WHy1gU5czhtn/ajOSHrGNm7UaHd+SdaCxXtH1GqHx0rYWSmA76xbY9jKMLDTcP2EGZbS0VdiGfcBrwS77R2scgeNFrbG+obBtfRXxwGi0D/Pt09EitwZcuJWxcpfgmef/XgucrzCVOYZdUGAbiFRi/S0kH23T2fYV3IaQ+Gr605cfYw8d1F3M4Ia93RQUj3gy07bEbsla33985DR8Hi9tNSa+5TSmr0DOTmNrgo532fm/eGuURPLyPiQwTXHY9gQ6Yv5vRmgaeDL5K08uyuT9UQLME6cykYgXKAp6ZfJX815dLE+dGpU8IIYFgPwIt/YMisqvEQzH+9KU0j0Ly1zlJxGQbVB5LG52X8M/nsE/pY0hAjl+abfC5DT5hAeKRfuap/lteXhqyFg0Xxarfa/XpOzguOo+WPHOWkW5iKr37qYrfan1XnRlDyUsWxfWfEhhASV8qb4aeauuzh7l9q+rUvq96+rCcedCKTjvTApVPb8tBXUVfEUpvOHo7LIhBlw6xPjvaIgZdO4KvOncFb8+KH5BSxxzb1rfEr+LyzQHgDv1mxXZbQkGi9ZjlKf0KMg3bAmEjKZp1z0BLZI0CKHrqsmy7Wm3z9Bs77y3O3+G9pYjxpshAd6gTDp8L3Z7JupehmVYhPRERCTrT3SLflZ/6Ox8+h8=</diagram></mxfile>"
+          }
+        }
+      },
+      "format": "short",
+      "graphId": "flowchart_2",
+      "gridPos": {
+        "h": 20,
+        "w": 23,
+        "x": 0,
+        "y": 0
+      },
+      "id": 2,
+      "init": {
+        "logLevel": 3
+      },
+      "interval": null,
+      "metrics": [],
+      "options": {},
+      "strokeWidth": 1,
+      "styleSeq": 12,
+      "styles": [
+        {
+          "aggregation": "current",
+          "alias": "",
+          "colorMode": "fillColor",
+          "colorOn": "a",
+          "colors": [
+            "rgba(245, 54, 54, 0.9)",
+            "rgba(237, 129, 40, 0.89)",
+            "rgba(50, 172, 45, 0.97)"
+          ],
+          "dateFormat": "YYYY-MM-DD HH:mm:ss",
+          "decimals": 2,
+          "id": 1,
+          "invert": false,
+          "link": false,
+          "linkMaps": [],
+          "linkProp": "id",
+          "mappingType": 1,
+          "pattern": "coffeestock",
+          "reduce": false,
+          "shapeMaps": [
+            {
+              "id": 1,
+              "pattern": "11",
+              "prop": "id"
+            }
+          ],
+          "shapeProp": "id",
+          "shapeSeq": 2,
+          "textMaps": [
+            {
+              "hidden": false,
+              "id": 1,
+              "pattern": "14",
+              "prop": "id"
+            }
+          ],
+          "textOn": "wmd",
+          "textPattern": "/.*/",
+          "textProp": "id",
+          "textReplace": "content",
+          "textSeq": 2,
+          "thresholds": [
+            "10",
+            "20"
+          ],
+          "type": "number",
+          "unit": "short"
+        },
+        {
+          "aggregation": "current",
+          "alias": "",
+          "colorMode": "fillColor",
+          "colorOn": "a",
+          "colors": [
+            "rgba(245, 54, 54, 0.9)",
+            "rgba(237, 129, 40, 0.89)",
+            "rgba(50, 172, 45, 0.97)"
+          ],
+          "dateFormat": "YYYY-MM-DD HH:mm:ss",
+          "decimals": 2,
+          "id": 2,
+          "invert": false,
+          "link": false,
+          "linkMaps": [],
+          "linkProp": "id",
+          "mappingType": 1,
+          "pattern": "waterstock",
+          "reduce": false,
+          "shapeMaps": [
+            {
+              "id": 1,
+              "pattern": "12",
+              "prop": "id"
+            }
+          ],
+          "shapeProp": "id",
+          "shapeSeq": 2,
+          "textMaps": [
+            {
+              "hidden": false,
+              "id": 1,
+              "pattern": "15",
+              "prop": "id"
+            }
+          ],
+          "textOn": "wmd",
+          "textPattern": "/.*/",
+          "textProp": "id",
+          "textReplace": "content",
+          "textSeq": 2,
+          "thresholds": [
+            "10",
+            "20"
+          ],
+          "type": "number",
+          "unit": "short"
+        },
+        {
+          "aggregation": "current",
+          "alias": "",
+          "colorMode": "fillColor",
+          "colorOn": "a",
+          "colors": [
+            "rgba(245, 54, 54, 0.9)",
+            "rgba(237, 129, 40, 0.89)",
+            "rgba(50, 172, 45, 0.97)"
+          ],
+          "dateFormat": "YYYY-MM-DD HH:mm:ss",
+          "decimals": 2,
+          "id": 3,
+          "invert": false,
+          "link": false,
+          "linkMaps": [],
+          "linkProp": "id",
+          "mappingType": 1,
+          "pattern": "teastock",
+          "reduce": false,
+          "shapeMaps": [
+            {
+              "id": 1,
+              "pattern": "13",
+              "prop": "id"
+            }
+          ],
+          "shapeProp": "id",
+          "shapeSeq": 2,
+          "textMaps": [
+            {
+              "hidden": false,
+              "id": 1,
+              "pattern": "16",
+              "prop": "id"
+            }
+          ],
+          "textOn": "wmd",
+          "textPattern": "/.*/",
+          "textProp": "id",
+          "textReplace": "content",
+          "textSeq": 2,
+          "thresholds": [
+            "10",
+            "20"
+          ],
+          "type": "number",
+          "unit": "short"
+        },
+        {
+          "aggregation": "current",
+          "alias": "",
+          "colorMode": "fillColor",
+          "colorOn": "a",
+          "colors": [
+            "rgba(245, 54, 54, 0.9)",
+            "rgba(237, 129, 40, 0.89)",
+            "rgba(50, 172, 45, 0.97)"
+          ],
+          "dateFormat": "YYYY-MM-DD HH:mm:ss",
+          "decimals": 2,
+          "id": 4,
+          "invert": false,
+          "linkMaps": [],
+          "linkProp": "id",
+          "linkSeq": 1,
+          "mappingType": 1,
+          "pattern": "wipcoffee",
+          "shapeMaps": [],
+          "shapeProp": "id",
+          "shapeSeq": 1,
+          "textMaps": [
+            {
+              "id": 1,
+              "pattern": "5",
+              "prop": "id"
+            }
+          ],
+          "textOn": "wmd",
+          "textPattern": "/.*/",
+          "textProp": "id",
+          "textReplace": "content",
+          "textSeq": 2,
+          "thresholds": [],
+          "type": "number",
+          "unit": "short"
+        },
+        {
+          "aggregation": "current",
+          "alias": "",
+          "colorMode": "fillColor",
+          "colorOn": "a",
+          "colors": [
+            "rgba(245, 54, 54, 0.9)",
+            "rgba(237, 129, 40, 0.89)",
+            "rgba(50, 172, 45, 0.97)"
+          ],
+          "dateFormat": "YYYY-MM-DD HH:mm:ss",
+          "decimals": 2,
+          "id": 5,
+          "invert": false,
+          "linkMaps": [],
+          "linkProp": "id",
+          "linkSeq": 1,
+          "mappingType": 1,
+          "pattern": "wiptea",
+          "shapeMaps": [],
+          "shapeProp": "id",
+          "shapeSeq": 1,
+          "textMaps": [
+            {
+              "id": 1,
+              "pattern": "7",
+              "prop": "id"
+            }
+          ],
+          "textOn": "wmd",
+          "textPattern": "/.*/",
+          "textProp": "id",
+          "textReplace": "content",
+          "textSeq": 2,
+          "thresholds": [],
+          "type": "number",
+          "unit": "short"
+        },
+        {
+          "aggregation": "current",
+          "alias": "",
+          "colorMode": "fillColor",
+          "colorOn": "a",
+          "colors": [
+            "rgba(255, 255, 255, 0.97)",
+            "rgba(237, 129, 40, 0.89)",
+            "rgba(245, 54, 54, 0.9)"
+          ],
+          "dateFormat": "YYYY-MM-DD HH:mm:ss",
+          "decimals": 2,
+          "id": 6,
+          "invert": true,
+          "linkMaps": [],
+          "linkProp": "id",
+          "linkSeq": 1,
+          "mappingType": 1,
+          "pattern": "refillcoffee",
+          "shapeMaps": [
+            {
+              "id": 1,
+              "pattern": "32",
+              "prop": "id"
+            }
+          ],
+          "shapeProp": "id",
+          "shapeSeq": 2,
+          "textMaps": [],
+          "textOn": "wmd",
+          "textPattern": "/.*/",
+          "textProp": "id",
+          "textReplace": "content",
+          "textSeq": 1,
+          "thresholds": [
+            "0.5",
+            "0.7"
+          ],
+          "type": "number",
+          "unit": "short"
+        },
+        {
+          "aggregation": "current",
+          "alias": "",
+          "colorMode": "fillColor",
+          "colorOn": "a",
+          "colors": [
+            "rgba(255, 255, 255, 0.97)",
+            "rgba(237, 129, 40, 0.89)",
+            "rgba(245, 54, 54, 0.9)"
+          ],
+          "dateFormat": "YYYY-MM-DD HH:mm:ss",
+          "decimals": 2,
+          "id": 7,
+          "invert": true,
+          "linkMaps": [],
+          "linkProp": "id",
+          "linkSeq": 1,
+          "mappingType": 1,
+          "pattern": "refillwater",
+          "shapeMaps": [
+            {
+              "id": 1,
+              "pattern": "33",
+              "prop": "id"
+            }
+          ],
+          "shapeProp": "id",
+          "shapeSeq": 2,
+          "textMaps": [],
+          "textOn": "wmd",
+          "textPattern": "/.*/",
+          "textProp": "id",
+          "textReplace": "content",
+          "textSeq": 1,
+          "thresholds": [
+            "0.5",
+            "0.7"
+          ],
+          "type": "number",
+          "unit": "locale"
+        },
+        {
+          "aggregation": "current",
+          "alias": "",
+          "colorMode": "fillColor",
+          "colorOn": "a",
+          "colors": [
+            "rgba(255, 255, 255, 0.97)",
+            "rgba(237, 129, 40, 0.89)",
+            "rgba(245, 54, 54, 0.9)"
+          ],
+          "dateFormat": "YYYY-MM-DD HH:mm:ss",
+          "decimals": 2,
+          "id": 8,
+          "invert": true,
+          "linkMaps": [],
+          "linkProp": "id",
+          "linkSeq": 1,
+          "mappingType": 1,
+          "pattern": "refilltea",
+          "shapeMaps": [
+            {
+              "hidden": false,
+              "id": 1,
+              "pattern": "34",
+              "prop": "id"
+            }
+          ],
+          "shapeProp": "id",
+          "shapeSeq": 2,
+          "textMaps": [],
+          "textOn": "wmd",
+          "textPattern": "/.*/",
+          "textProp": "id",
+          "textReplace": "content",
+          "textSeq": 1,
+          "thresholds": [
+            "0.5",
+            "0.7"
+          ],
+          "type": "number",
+          "unit": "short"
+        },
+        {
+          "aggregation": "current",
+          "alias": "",
+          "colorMode": "fillColor",
+          "colorOn": "a",
+          "colors": [
+            "#37872D",
+            "rgba(237, 129, 40, 0.89)",
+            "rgba(245, 54, 54, 0.9)"
+          ],
+          "dateFormat": "YYYY-MM-DD HH:mm:ss",
+          "decimals": 2,
+          "id": 9,
+          "invert": true,
+          "linkMaps": [],
+          "linkProp": "id",
+          "linkSeq": 1,
+          "mappingType": 1,
+          "pattern": "refilltea",
+          "shapeMaps": [
+            {
+              "id": 1,
+              "pattern": "30",
+              "prop": "id"
+            }
+          ],
+          "shapeProp": "id",
+          "shapeSeq": 2,
+          "textMaps": [],
+          "textOn": "wmd",
+          "textPattern": "/.*/",
+          "textProp": "id",
+          "textReplace": "content",
+          "textSeq": 1,
+          "thresholds": [
+            "0.5",
+            "0.7"
+          ],
+          "type": "number",
+          "unit": "short"
+        },
+        {
+          "aggregation": "current",
+          "alias": "",
+          "colorMode": "fillColor",
+          "colorOn": "a",
+          "colors": [
+            "#37872D",
+            "rgba(237, 129, 40, 0.89)",
+            "rgba(245, 54, 54, 0.9)"
+          ],
+          "dateFormat": "YYYY-MM-DD HH:mm:ss",
+          "decimals": 2,
+          "id": 10,
+          "invert": true,
+          "linkMaps": [],
+          "linkProp": "id",
+          "linkSeq": 1,
+          "mappingType": 1,
+          "pattern": "refillwater",
+          "shapeMaps": [
+            {
+              "id": 1,
+              "pattern": "29",
+              "prop": "id"
+            },
+            {
+              "id": 2,
+              "pattern": "31",
+              "prop": "id"
+            }
+          ],
+          "shapeProp": "id",
+          "shapeSeq": 3,
+          "textMaps": [],
+          "textOn": "wmd",
+          "textPattern": "/.*/",
+          "textProp": "id",
+          "textReplace": "content",
+          "textSeq": 1,
+          "thresholds": [
+            "0.5",
+            "0.7"
+          ],
+          "type": "number",
+          "unit": "short"
+        },
+        {
+          "aggregation": "current",
+          "alias": "",
+          "colorMode": "fillColor",
+          "colorOn": "a",
+          "colors": [
+            "#37872D",
+            "rgba(237, 129, 40, 0.89)",
+            "rgba(245, 54, 54, 0.9)"
+          ],
+          "dateFormat": "YYYY-MM-DD HH:mm:ss",
+          "decimals": 2,
+          "id": 11,
+          "invert": true,
+          "linkMaps": [],
+          "linkProp": "id",
+          "linkSeq": 1,
+          "mappingType": 1,
+          "pattern": "refillcoffee",
+          "shapeMaps": [
+            {
+              "id": 1,
+              "pattern": "28",
+              "prop": "id"
+            }
+          ],
+          "shapeProp": "id",
+          "shapeSeq": 3,
+          "textMaps": [],
+          "textOn": "wmd",
+          "textPattern": "/.*/",
+          "textProp": "id",
+          "textReplace": "content",
+          "textSeq": 1,
+          "thresholds": [
+            "0.5",
+            "1"
+          ],
+          "type": "number",
+          "unit": "short"
+        },
+        {
+          "aggregation": "current",
+          "alias": "",
+          "colorMode": "fillColor",
+          "colorOn": "a",
+          "colors": [
+            "rgba(245, 54, 54, 0.9)",
+            "rgba(237, 129, 40, 0.89)",
+            "rgba(50, 172, 45, 0.97)"
+          ],
+          "dateFormat": "YYYY-MM-DD HH:mm:ss",
+          "decimals": 2,
+          "id": 12,
+          "invert": false,
+          "linkMaps": [],
+          "linkProp": "id",
+          "linkSeq": 1,
+          "mappingType": 1,
+          "pattern": "clients",
+          "shapeMaps": [],
+          "shapeProp": "id",
+          "shapeSeq": 1,
+          "textMaps": [
+            {
+              "id": 1,
+              "pattern": "3",
+              "prop": "id"
+            }
+          ],
+          "textOn": "wmd",
+          "textPattern": "/.*/",
+          "textProp": "id",
+          "textReplace": "content",
+          "textSeq": 2,
+          "thresholds": [],
+          "type": "number",
+          "unit": "locale"
+        }
+      ],
+      "targets": [
+        {
+          "alias": "coffeestock",
+          "groupBy": [
+            {
+              "params": [
+                "type"
+              ],
+              "type": "tag"
+            }
+          ],
+          "measurement": "rt",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "resource"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "type",
+              "operator": "=",
+              "value": "coffee"
+            }
+          ]
+        },
+        {
+          "alias": "teastock",
+          "groupBy": [
+            {
+              "params": [
+                "type"
+              ],
+              "type": "tag"
+            }
+          ],
+          "measurement": "rt",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "B",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "resource"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "type",
+              "operator": "=",
+              "value": "tea"
+            }
+          ]
+        },
+        {
+          "alias": "waterstock",
+          "groupBy": [
+            {
+              "params": [
+                "type"
+              ],
+              "type": "tag"
+            }
+          ],
+          "measurement": "rt",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "C",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "resource"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "type",
+              "operator": "=",
+              "value": "water"
+            }
+          ]
+        },
+        {
+          "alias": "wipcoffee",
+          "groupBy": [],
+          "measurement": "wip",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "D",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "resource"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "last"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "type",
+              "operator": "=",
+              "value": "coffee"
+            }
+          ]
+        },
+        {
+          "alias": "wiptea",
+          "groupBy": [],
+          "measurement": "wip",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "E",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "resource"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "last"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "type",
+              "operator": "=",
+              "value": "tea"
+            }
+          ]
+        },
+        {
+          "alias": "refillcoffee",
+          "groupBy": [],
+          "measurement": "coffeetea",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "F",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "refills"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "last"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "type",
+              "operator": "=",
+              "value": "coffee"
+            }
+          ]
+        },
+        {
+          "alias": "refillwater",
+          "groupBy": [],
+          "measurement": "coffeetea",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "G",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "refills"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "last"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "type",
+              "operator": "=",
+              "value": "water"
+            }
+          ]
+        },
+        {
+          "alias": "refilltea",
+          "groupBy": [],
+          "measurement": "coffeetea",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "H",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "refills"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "last"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "type",
+              "operator": "=",
+              "value": "tea"
+            }
+          ]
+        },
+        {
+          "alias": "clients",
+          "groupBy": [],
+          "hide": false,
+          "measurement": "stats",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "I",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "clients"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "last"
+              }
+            ]
+          ],
+          "tags": []
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Panel Title",
+      "type": "agenty-flowcharting-panel",
+      "valueName": "current"
+    }
+  ],
+  "refresh": "0.5s",
+  "schemaVersion": 18,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-5m",
+    "to": "now"
+  },
+  "timepicker": {
+    "refresh_intervals": [
+      "0.5s",
+      "5s",
+      "10s",
+      "30s",
+      "1m",
+      "5m",
+      "15m",
+      "30m",
+      "1h",
+      "2h",
+      "1d"
+    ],
+    "time_options": [
+      "5m",
+      "15m",
+      "1h",
+      "6h",
+      "12h",
+      "24h",
+      "2d",
+      "7d",
+      "30d"
+    ]
+  },
+  "timezone": "",
+  "title": "graph",
+  "uid": "MQWDcGnZk",
+  "version": 5
+}

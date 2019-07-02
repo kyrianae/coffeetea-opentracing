@@ -22,16 +22,24 @@ client_influx.create_database(influx_db)
 
 # app = Flask(__name__)
 # CORS(app)
-
+i = 0
 while True:
+    if i == 0:
+        root = trace.newspan(tracer, None, 'root')
+    i += 1
+    if i == 10:
+        root.finish()
+        i = 0
     r = None
     try:
-        span = trace.newspan(tracer, None, 'pushdata')
+        span = trace.newspan(tracer, root.context, 'pushdata')
+        sspan = trace.newspan(tracer, span.context, 'ask data')
         res = trace.inject_in_header(tracer, span, {})
         r = API.call_api(data_server, data_port, '/state', res)
         # print(r.content)
         j = json.loads(r.content.decode())
-        sspan = trace.newspan(tracer, span.context, 'push tea')
+        sspan.finish()
+        sspan = trace.newspan(tracer, sspan.context, 'push tea')
         json_body = [
             {
             "measurement": "coffeetea",
@@ -108,4 +116,4 @@ while True:
         print('not reached or error')
     span.finish()
 
-    sleep(0.01)
+    sleep(0.5)

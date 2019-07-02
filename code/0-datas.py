@@ -288,4 +288,5 @@ def consume(r):
 
 
 # Run server
+# app.run(port=data_port, host='0.0.0.0', threaded=True)
 app.run(port=data_port, host='0.0.0.0')
