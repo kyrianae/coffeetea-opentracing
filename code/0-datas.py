@@ -8,7 +8,7 @@ from flask_cors import CORS
 import logging
 from influxdb import InfluxDBClient
 import random
-
+from common.flask_opentracing import  FlaskTracing
 from common import trace
 from common import API
 
@@ -29,6 +29,7 @@ influx_pwd = os.environ["influx_pwd"]
 influx_db = os.environ["influx_db"]
 
 tracer = trace.init_tracer('data', tracer_server, tracer_port)
+tracing = FlaskTracing(tracer)
 
 client_influx = InfluxDBClient(influx_server, influx_port, influx_user, influx_pwd, influx_db)
 client_influx.create_database(influx_db)
@@ -288,5 +289,5 @@ def consume(r):
 
 
 # Run server
-# app.run(port=data_port, host='0.0.0.0', threaded=True)
-app.run(port=data_port, host='0.0.0.0')
+app.run(port=data_port, host='0.0.0.0', threaded=True)
+# app.run(port=data_port, host='0.0.0.0')

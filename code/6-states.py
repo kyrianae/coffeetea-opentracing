@@ -32,7 +32,8 @@ while True:
         i = 0
     r = None
     try:
-        span = trace.newspan(tracer, root.context, 'pushdata')
+        # span = trace.newspan(tracer, root.context, 'pushdata')
+        span = trace.newspan(tracer, None, 'pushdata')
         sspan = trace.newspan(tracer, span.context, 'ask data')
         res = trace.inject_in_header(tracer, span, {})
         r = API.call_api(data_server, data_port, '/state', res)
