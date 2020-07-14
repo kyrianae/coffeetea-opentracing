@@ -9,7 +9,7 @@ services:
     - "5003:5003"
     networks:
       - db
-      - kafka
+        # - kafka
       - opentracing
 
   buy:
@@ -22,7 +22,7 @@ services:
     - "5000:5000"
     networks:
       - db
-      - kafka
+        #      - kafka
       - opentracing
     # depends_on: 
     #   - kafka-1
@@ -48,7 +48,7 @@ services:
     - "5001:5001"
     networks:
       - db
-      - kafka
+        #      - kafka
       - opentracing
 
   bill:
@@ -60,7 +60,7 @@ services:
     - "5002:5002"
     networks:
       - db
-      - kafka
+        #      - kafka
       - opentracing
 
   client:
@@ -72,7 +72,7 @@ services:
     - "5005:5005"
     networks:
       - db
-      - kafka
+        #      - kafka
       - opentracing
 
   states:
@@ -84,16 +84,16 @@ services:
     - "5006:5006"
     networks:
       - db
-      - kafka
+        # - kafka
       - opentracing
 
 networks:
     db:
       external:
         name: dbdashboard_dbdash
-    kafka:
-      external:
-        name: apachekafka_backends
+        #   kafka:
+        # external:
+        #name: apachekafka_backends
     opentracing:
       external:
         name: jaeger_opentracing
