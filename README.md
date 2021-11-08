@@ -4,6 +4,10 @@ jaeger is coming from grafana devenv
 influx/grafana is coming from internet i will try to found again the source
 docker-compose for jaeger and grafana.. are in nother project
 
+![render](https://github.com/kyrianae/coffeetea-opentracing/blob/master/snapshots/Screenshot%20from%202019-07-02%2021-17-43.png)
+![render](https://github.com/kyrianae/coffeetea-opentracing/blob/master/snapshots/Screenshot%20from%202019-07-02%2021-19-12.png)
+![render](https://github.com/kyrianae/coffeetea-opentracing/blob/master/snapshots/Screenshot%20from%202019-07-02%2021-19-40.png)
+![render](https://github.com/kyrianae/coffeetea-opentracing/blob/master/snapshots/Screenshot%20from%202019-07-02%2021-20-08.png)
 ## elements 
 theis test contain differents services that call eah other implenting opentracing
 ### drinkclient
